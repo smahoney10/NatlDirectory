@@ -1,6 +1,6 @@
 <table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
 <tr><td>id</td><td>
-"plannet-practitioner-1233011061"
+"NatlDir-practitioner-1233011061"
 </td></tr>
 <tr><td>meta.versionId</td><td>
 "1"
@@ -8,7 +8,7 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Practitioner"</td></tr>
 <tr><td>identifier[0].use</td><td>
 "official"
 </td></tr>
@@ -133,7 +133,7 @@
 "Massachusetts"
 </td></tr>
 <tr><td>qualification[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/practitioner-qualification"
 </td></tr>
 <tr><td>qualification[0].identifier[0].use</td><td>
 "official"
@@ -205,7 +205,7 @@
 "Massachusetts"
 </td></tr>
 <tr><td>qualification[1].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/practitioner-qualification"
 </td></tr>
 <tr><td>qualification[1].identifier[0].use</td><td>
 "official"
@@ -253,10 +253,10 @@
 "Board of Registration in Medicine (BORIM)"
 </td></tr>
 <tr><td>communication[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/communication-proficiency"
 </td></tr>
 <tr><td>communication[0].extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/LanguageProficiencyCS"
 </td></tr>
 <tr><td>communication[0].extension[0].valueCodeableConcept.coding[0].code</td><td>
 #50

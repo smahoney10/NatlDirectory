@@ -1,11 +1,11 @@
 <table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
 <tr><td>id</td><td>
-"plannet-insuranceplan-HPID450000"
+"NatlDir-insuranceplan-HPID450000"
 </td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-InsurancePlan"</td></tr>
 <tr><td>identifier[0].use</td><td>
 "official"
 </td></tr>
@@ -25,7 +25,7 @@ HPID450000
 "active"
 </td></tr>
 <tr><td>type[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/InsuranceProductTypeCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/InsuranceProductTypeCS"
 </td></tr>
 <tr><td>type[0].coding[0].code</td><td>
 #CommercialPPO
@@ -41,19 +41,19 @@ HPID450000
 </td></tr>
 <tr><td>alias[0]</td><td>"Acme MA GOLD PPO"</td></tr>
 <tr><td>ownedBy.reference</td><td>
-"Organization/plannet-organization-1230210000"
+"Organization/NatlDir-organization-1230210000"
 </td></tr>
 <tr><td>ownedBy.display</td><td>
 "Acme Insurance Co"
 </td></tr>
 <tr><td>administeredBy.reference</td><td>
-"Organization/plannet-organization-1230210000"
+"Organization/NatlDir-organization-1230210000"
 </td></tr>
 <tr><td>administeredBy.display</td><td>
 "Acme Insurance Co"
 </td></tr>
 <tr><td>network[0].reference</td><td>
-"Organization/plannet-network-HPID010000"
+"Organization/NatlDir-network-HPID010000"
 </td></tr>
 <tr><td>network[0].display</td><td>
 "Acme of Massechusetts Preferred Provider Network"

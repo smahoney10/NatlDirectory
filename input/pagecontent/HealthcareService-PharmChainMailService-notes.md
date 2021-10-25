@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "PharmChainMailService"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-HealthcareService"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -13,7 +13,7 @@
 "true"
 </td></tr>
 <tr><td>extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/delivery-method"
 </td></tr>
 <tr><td>extension[0].extension[0].url</td><td>
 "type"
@@ -22,7 +22,7 @@
 #virtual
 </td></tr>
 <tr><td>extension[0].extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/DeliveryMethodCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/DeliveryMethodCS"
 </td></tr>
 <tr><td>extension[0].extension[1].url</td><td>
 "virtualModalities"
@@ -31,7 +31,7 @@
 #web
 </td></tr>
 <tr><td>extension[0].extension[1].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/VirtualModalitiesCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/VirtualModalitiesCS"
 </td></tr>
 <tr><td>extension[0].extension[2].url</td><td>
 "virtualModalities"
@@ -40,7 +40,7 @@
 #app
 </td></tr>
 <tr><td>extension[0].extension[2].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/VirtualModalitiesCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/VirtualModalitiesCS"
 </td></tr>
 <tr><td>extension[0].extension[3].url</td><td>
 "virtualModalities"
@@ -49,7 +49,7 @@
 #tdd
 </td></tr>
 <tr><td>extension[0].extension[3].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/VirtualModalitiesCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/VirtualModalitiesCS"
 </td></tr>
 <tr><td>extension[0].extension[4].url</td><td>
 "virtualModalities"
@@ -58,7 +58,7 @@
 #phone
 </td></tr>
 <tr><td>extension[0].extension[4].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/VirtualModalitiesCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/VirtualModalitiesCS"
 </td></tr>
 <tr><td>language</td><td>
 "en-US"
@@ -70,7 +70,7 @@
 #pharm
 </td></tr>
 <tr><td>category[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/HealthcareServiceCategoryCS"
 </td></tr>
 <tr><td>category[0].coding[0].display</td><td>
 "Pharmacy"

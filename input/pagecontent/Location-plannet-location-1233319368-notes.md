@@ -1,16 +1,16 @@
 <table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
 <tr><td>id</td><td>
-"plannet-location-1233319368"
+"NatlDir-location-1233319368"
 </td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Location"</td></tr>
 <tr><td>extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/accessibility"
 </td></tr>
 <tr><td>extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AccessibilityCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/AccessibilityCS"
 </td></tr>
 <tr><td>extension[0].valueCodeableConcept.coding[0].code</td><td>
 #handiaccess
@@ -25,13 +25,13 @@
 "acceptingPatients"
 </td></tr>
 <tr><td>extension[1].extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/AcceptingPatientsCS"
 </td></tr>
 <tr><td>extension[1].extension[0].valueCodeableConcept.coding[0].code</td><td>
 #existing
 </td></tr>
 <tr><td>extension[1].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/newpatients"
 </td></tr>
 <tr><td>identifier[0].use</td><td>
 "secondary"
@@ -43,7 +43,7 @@
 main campus
 </td></tr>
 <tr><td>identifier[0].assigner.reference</td><td>
-"Organization/plannet-organization-1233319368"
+"Organization/NatlDir-organization-1233319368"
 </td></tr>
 <tr><td>identifier[0].assigner.display</td><td>
 "RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."
@@ -64,7 +64,7 @@ main campus
 "true"
 </td></tr>
 <tr><td>telecom[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>telecom[0].system</td><td>
 "phone"
@@ -82,7 +82,7 @@ main campus
 "true"
 </td></tr>
 <tr><td>telecom[1].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>telecom[1].system</td><td>
 "fax"
@@ -122,7 +122,7 @@ main campus
 "41.79822"
 </td></tr>
 <tr><td>managingOrganization.reference</td><td>
-"Organization/plannet-organization-1233319368"
+"Organization/NatlDir-organization-1233319368"
 </td></tr>
 <tr><td>managingOrganization.display</td><td>
 "RHODE ISLAND SUBSTANCE ABUSE TREATMENT, INC."

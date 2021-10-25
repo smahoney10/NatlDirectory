@@ -69,16 +69,16 @@ Description: "EndpointUseCase is an enumeration of the specific use cases (servi
 Extension: LocationReference
 Id: location-reference
 Title: "Location Reference"
-Description: "A reference to a Location resource (plannet-Location) defining the coverage area of a health insurance provider network"
-* value[x] only Reference (PlannetLocation)
+Description: "A reference to a Location resource (NatlDir-Location) defining the coverage area of a health insurance provider network"
+* value[x] only Reference (NatlDirLocation)
 * value[x] 1..1 MS 
 
 
 Extension: NetworkReference
 Id: network-reference
 Title: "Network Reference"
-Description: "A reference to the healthcare provider insurance networks (plannet-Network) the practitioner participates in through their role"
-* value[x] only Reference(PlannetNetwork) 
+Description: "A reference to the healthcare provider insurance networks (NatlDir-Network) the practitioner participates in through their role"
+* value[x] only Reference(NatlDirNetwork) 
 * value[x] 1..1 MS 
 
 
@@ -98,7 +98,7 @@ Description: "New Patients indicates whether new patients are being accepted in 
 * extension[acceptingPatients] ^short = "Accepting Patients"
 * extension[acceptingPatients].value[x] 1..1
 * extension[acceptingPatients].value[x] from AcceptingPatientsVS (required)
-* extension[fromNetwork].value[x] only Reference(PlannetNetwork)
+* extension[fromNetwork].value[x] only Reference(NatlDirNetwork)
 * extension[fromNetwork].value[x] 1..1
 * extension[fromNetwork] ^short = "From Network"
 * extension[characteristics].value[x] only string
@@ -136,7 +136,7 @@ Description: "An extension to add status and whereValid elements to a practition
 * extension[status].valueCode from QualificationStatusVS (required)
 * extension[status].valueCode =  $QualificationStatusCS#active (exactly)
 * extension[whereValid] ^short = "Where the qualification is valid"
-* extension[whereValid].value[x] only CodeableConcept or Reference(PlannetLocation)
+* extension[whereValid].value[x] only CodeableConcept or Reference(NatlDirLocation)
 * extension[whereValid].valueCodeableConcept from $USPSState (required)
 * extension[whereValid].value[x] 1..1
 
@@ -157,22 +157,22 @@ Description: "An extension to add qualifications for an organization (e.g. accre
 * extension[code].value[x] 1..1
 * extension[code].value[x] from SpecialtyAndDegreeLicenseCertificateVS (extensible)
 * extension[issuer].value[x] 1..1
-* extension[issuer].value[x] only Reference(PlannetOrganization)
+* extension[issuer].value[x] only Reference(NatlDirOrganization)
 * extension[status].value[x] 1..1
 * extension[status].value[x] only  code 
 * extension[status].valueCode from QualificationStatusVS (required)
 * extension[status].valueCode = $QualificationStatusCS#active (exactly)
 * extension[period].value[x] only Period 
 * extension[period].value[x] 1..1
-* extension[whereValid].value[x] only CodeableConcept or Reference(PlannetLocation)
+* extension[whereValid].value[x] only CodeableConcept or Reference(NatlDirLocation)
 * extension[whereValid].value[x] from $USPSState (required)
 * extension[whereValid].value[x] 1..1
 
 Extension: ViaIntermediary
 Id: via-intermediary
 Title: "Via Intermediary"
-Description: "A reference to an alternative point of contact (plannet-PractitionerRole, plannet-Organization, plannet-OrganizationAffiliation, or plannet-Location) for this organization"
-* value[x] only Reference(PlannetPractitionerRole or PlannetOrganizationAffiliation or PlannetLocation or PlannetOrganization) 
+Description: "A reference to an alternative point of contact (NatlDir-PractitionerRole, NatlDir-Organization, NatlDir-OrganizationAffiliation, or NatlDir-Location) for this organization"
+* value[x] only Reference(NatlDirPractitionerRole or NatlDirOrganizationAffiliation or NatlDirLocation or NatlDirOrganization) 
 * value[x] 1..1 MS
 
 

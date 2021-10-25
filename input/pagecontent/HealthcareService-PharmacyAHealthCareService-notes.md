@@ -5,12 +5,12 @@
 <tr><td>id</td><td>
 "PharmacyAHealthCareService"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-HealthcareService"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
 <tr><td>extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/delivery-method"
 </td></tr>
 <tr><td>extension[0].extension[0].url</td><td>
 "type"
@@ -19,7 +19,7 @@
 #physical
 </td></tr>
 <tr><td>extension[0].extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/DeliveryMethodCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/DeliveryMethodCS"
 </td></tr>
 <tr><td>extension[1].extension[0].url</td><td>
 "acceptingPatients"
@@ -28,7 +28,7 @@
 #existing
 </td></tr>
 <tr><td>extension[1].extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/AcceptingPatientsCS"
 </td></tr>
 <tr><td>extension[1].extension[1].url</td><td>
 "fromNetwork"
@@ -37,10 +37,10 @@
 "Organization/AcmeOfCTStandardNetwork"
 </td></tr>
 <tr><td>extension[1].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/newpatients"
 </td></tr>
 <tr><td>telecom[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/via-intermediary"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/via-intermediary"
 </td></tr>
 <tr><td>telecom[0].extension[0].valueReference.reference</td><td>
 "Organization/PharmacyOrganizationA"
@@ -58,7 +58,7 @@
 #Pharmacy
 </td></tr>
 <tr><td>category[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/HealthcareServiceCategoryCS"
 </td></tr>
 <tr><td>category[0].coding[0].display</td><td>
 "Pharmacy"

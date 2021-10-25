@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "organization-address",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-address",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-address",
   "version": "0.2.0",
-  "name": "Plannet_sp_organization_address",
+  "name": "NatlDir_sp_organization_address",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-address",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

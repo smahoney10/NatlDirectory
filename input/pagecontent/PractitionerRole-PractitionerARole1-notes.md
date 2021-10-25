@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "PractitionerARole1"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-PractitionerRole"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -19,7 +19,7 @@
 #PH
 </td></tr>
 <tr><td>code[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/ProviderRoleCS"
 </td></tr>
 <tr><td>practitioner.reference</td><td>
 "Practitioner/PractitionerA"

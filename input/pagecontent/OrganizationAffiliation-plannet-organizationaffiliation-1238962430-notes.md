@@ -1,11 +1,11 @@
 <table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
 <tr><td>id</td><td>
-"plannet-organizationaffiliation-1238962430"
+"NatlDir-organizationaffiliation-1238962430"
 </td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-OrganizationAffiliation"</td></tr>
 <tr><td>identifier[0].use</td><td>
 "secondary"
 </td></tr>
@@ -22,7 +22,7 @@
 "Network Provider ID"
 </td></tr>
 <tr><td>identifier[0].system</td><td>
-"https://plannetorganization.com"
+"https://NatlDirorganization.com"
 </td></tr>
 <tr><td>identifier[0].value</td><td>
 7acb62471f9898
@@ -34,25 +34,25 @@
 "true"
 </td></tr>
 <tr><td>organization.reference</td><td>
-"Organization/plannet-organization-1230040000"
+"Organization/NatlDir-organization-1230040000"
 </td></tr>
 <tr><td>organization.display</td><td>
 "Western Massachusetts HIE"
 </td></tr>
 <tr><td>participatingOrganization.reference</td><td>
-"Organization/plannet-organization-1238962430"
+"Organization/NatlDir-organization-1238962430"
 </td></tr>
 <tr><td>participatingOrganization.display</td><td>
 "START INC"
 </td></tr>
 <tr><td>network[0].reference</td><td>
-"Organization/plannet-network-HPID030000"
+"Organization/NatlDir-network-HPID030000"
 </td></tr>
 <tr><td>network[0].display</td><td>
 "Massachusetts Persona Preferred Provider Network"
 </td></tr>
 <tr><td>network[1].reference</td><td>
-"Organization/plannet-network-HPID100000"
+"Organization/NatlDir-network-HPID100000"
 </td></tr>
 <tr><td>network[1].display</td><td>
 "State of Massachusetts Preferred Provider Network"

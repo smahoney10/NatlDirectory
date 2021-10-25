@@ -1,13 +1,13 @@
 <h3><a name="Implementation"></a>Implementation Notes</h3>
-<p>This page contains miscellaneous information on FHIR implementation. The content is primarily directed at implementers of Plan-Net.</p>
+<p>This page contains miscellaneous information on FHIR implementation. The content is primarily directed at implementers of NatlDir.</p>
 <h4><a id="conformance-requirements"></a>Conformance Requirements</h4>
 <p>The conformance verbs (<strong>SHALL</strong>, <strong>SHALL NOT,&nbsp;</strong><strong>SHOULD</strong>, <strong>MAY</strong>) used in this guide are defined in <a href="http://hl7.org/fhir/R4/conformance-rules.html">FHIR Conformance Rules</a>.</p>
 <h4><a id="privacy-considerations"></a>Privacy Considerations</h4>
-<p>Access to the Plan-Net service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.</p>
-<p>A conformant Plan-Net service <strong>SHALL NOT</strong> require a directory mobile application to send consumer identifying information in order to query content.</p>
-<p>A directory mobile application <strong>SHALL NOT</strong> send consumer identifiable information when querying a Plan-Net service.</p>
+<p>Access to the NatlDir service should not require authentication, and the server should not maintain any records that could associate the consumer with the entities that were queried.</p>
+<p>A conformant NatlDir service <strong>SHALL NOT</strong> require a directory mobile application to send consumer identifying information in order to query content.</p>
+<p>A directory mobile application <strong>SHALL NOT</strong> send consumer identifiable information when querying a NatlDir service.</p>
 <h4><a id="must-support"></a>Must Support</h4>
-<p>When querying and reading the Plan-Net Profiles defined in this IG, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows:</p>
+<p>When querying and reading the NatlDir Profiles defined in this IG, Must Support on any profile data element <strong>SHALL</strong> be interpreted as follows:</p>
 <h5>Health Plan API Requirements</h5>
 <ul>
 <li>Health Plan API actors <strong>SHALL</strong> be capable of populating all Must Support data elements as part of the query results.</li>
@@ -26,7 +26,7 @@
 <h4><a id="general-security-considerations"></a>General Security Considerations</h4>
 <p><strong>NO CONTENT</strong></p>
 <h3><a name="Representing"></a>Representing and Searching Provider Directory Data</h3>
-<p>It is important for payers to use the Plan-Net profiles consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data.&nbsp; The Plan-Net design is based around the following types of searches.</p>
+<p>It is important for payers to use the NatlDir profiles consistently in order to achieve true interoperability of directory information among payers. The intent of this section is to provide examples of the canonical use of the profiles provided in this IG that will guide implementers towards the consistent use of these profiles that will enable 3rd party applications to search the data.&nbsp; The NatlDir design is based around the following types of searches.</p>
 <table style="border-color: Black;" border="3" width="947">
 <tbody>
 <tr>

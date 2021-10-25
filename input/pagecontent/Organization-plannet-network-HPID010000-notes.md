@@ -1,11 +1,11 @@
 <table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
 <tr><td>id</td><td>
-"plannet-network-HPID010000"
+"NatlDir-network-HPID010000"
 </td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Network"</td></tr>
 <tr><td>identifier[0].use</td><td>
 "official"
 </td></tr>
@@ -37,7 +37,7 @@ HPID010000
 "true"
 </td></tr>
 <tr><td>type[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/OrgTypeCS"
 </td></tr>
 <tr><td>type[0].coding[0].code</td><td>
 #payer
@@ -74,7 +74,7 @@ HPID010000
 "USA"
 </td></tr>
 <tr><td>partOf.reference</td><td>
-"Organization/plannet-organization-1230210000"
+"Organization/NatlDir-organization-1230210000"
 </td></tr>
 <tr><td>partOf.display</td><td>
 "Acme Insurance Co"
@@ -141,7 +141,7 @@ HPID010000
 "18:00:00"
 </td></tr>
 <tr><td>contact[0].telecom[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>contact[0].telecom[0].system</td><td>
 "phone"

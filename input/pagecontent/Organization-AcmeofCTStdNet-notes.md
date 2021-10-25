@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "AcmeofCTStdNet"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Network"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Network"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -13,7 +13,7 @@
 "true"
 </td></tr>
 <tr><td>contact[0].telecom[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/via-intermediary"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/via-intermediary"
 </td></tr>
 <tr><td>contact[0].telecom[0].extension[0].valueReference.reference</td><td>
 "Organization/Acme"
@@ -32,7 +32,7 @@
 #ntwk
 </td></tr>
 <tr><td>type[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/OrgTypeCS"
 </td></tr>
 <tr><td>type[0].coding[0].display</td><td>
 "Network"

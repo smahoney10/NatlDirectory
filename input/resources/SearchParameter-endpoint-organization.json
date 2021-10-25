@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "endpoint-organization",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/endpoint-organization",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/endpoint-organization",
   "version": "0.2.0",
-  "name": "Plannet_sp_endpoint_organization",
+  "name": "NatlDir_sp_endpoint_organization",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Endpoint-organization",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

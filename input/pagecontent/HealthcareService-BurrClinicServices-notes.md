@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "BurrClinicServices"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-HealthcareService"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -13,7 +13,7 @@
 "true"
 </td></tr>
 <tr><td>extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/delivery-method"
 </td></tr>
 <tr><td>extension[0].extension[0].url</td><td>
 "type"
@@ -22,7 +22,7 @@
 #physical
 </td></tr>
 <tr><td>extension[0].extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/DeliveryMethodCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/DeliveryMethodCS"
 </td></tr>
 <tr><td>language</td><td>
 "en-US"
@@ -31,7 +31,7 @@
 #outpat
 </td></tr>
 <tr><td>category[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/HealthcareServiceCategoryCS"
 </td></tr>
 <tr><td>specialty[0].coding[0].code</td><td>
 #207Q00000X

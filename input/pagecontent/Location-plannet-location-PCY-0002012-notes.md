@@ -1,11 +1,11 @@
 <table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
 <tr><td>id</td><td>
-"plannet-location-PCY-0002012"
+"NatlDir-location-PCY-0002012"
 </td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Location"</td></tr>
 <tr><td>identifier[0].use</td><td>
 "secondary"
 </td></tr>
@@ -16,7 +16,7 @@
 main campus
 </td></tr>
 <tr><td>identifier[0].assigner.reference</td><td>
-"Organization/plannet-organization-f021b8fc3135592c53d50ef64"
+"Organization/NatlDir-organization-f021b8fc3135592c53d50ef64"
 </td></tr>
 <tr><td>identifier[0].assigner.display</td><td>
 "WALGREENS"
@@ -46,7 +46,7 @@ main campus
 "true"
 </td></tr>
 <tr><td>telecom[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>telecom[0].system</td><td>
 "phone"
@@ -64,7 +64,7 @@ main campus
 "true"
 </td></tr>
 <tr><td>telecom[1].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>telecom[1].system</td><td>
 "fax"
@@ -104,7 +104,7 @@ main campus
 "41.66707"
 </td></tr>
 <tr><td>managingOrganization.reference</td><td>
-"Organization/plannet-organization-f021b8fc3135592c53d50ef64"
+"Organization/NatlDir-organization-f021b8fc3135592c53d50ef64"
 </td></tr>
 <tr><td>managingOrganization.display</td><td>
 "WALGREENS"

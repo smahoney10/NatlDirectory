@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "practitionerrole-specialty",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-specialty",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-specialty",
   "version": "0.2.0",
-  "name": "Plannet_sp_practitionerrole_specialty",
+  "name": "NatlDir_sp_practitionerrole_specialty",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-specialty",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

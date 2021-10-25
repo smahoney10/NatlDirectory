@@ -5,24 +5,24 @@
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-HealthcareService"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-HealthcareService"</td></tr>
 <tr><td>extension[0].extension[0].url</td><td>
 "acceptingPatients"
 </td></tr>
 <tr><td>extension[0].extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/AcceptingPatientsCS"
 </td></tr>
 <tr><td>extension[0].extension[0].valueCodeableConcept.coding[0].code</td><td>
 #yes
 </td></tr>
 <tr><td>extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/newpatients"
 </td></tr>
 <tr><td>extension[1].extension[0].url</td><td>
 "type"
 </td></tr>
 <tr><td>extension[1].extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/DeliveryMethodCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/DeliveryMethodCS"
 </td></tr>
 <tr><td>extension[1].extension[0].valueCodeableConcept.coding[0].code</td><td>
 #physical
@@ -31,19 +31,19 @@
 "Physical"
 </td></tr>
 <tr><td>extension[1].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/delivery-method"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/delivery-method"
 </td></tr>
 <tr><td>active</td><td>
 "true"
 </td></tr>
 <tr><td>providedBy.reference</td><td>
-"Organization/plannet-organization-6e4c8dc8f8cdb107f6ae996b7"
+"Organization/NatlDir-organization-6e4c8dc8f8cdb107f6ae996b7"
 </td></tr>
 <tr><td>providedBy.display</td><td>
 "DELLA PIETRA"
 </td></tr>
 <tr><td>category[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/HealthcareServiceCategoryCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/HealthcareServiceCategoryCS"
 </td></tr>
 <tr><td>category[0].coding[0].code</td><td>
 #Pharmacy
@@ -103,7 +103,7 @@
 "Managed Care Organization Pharmacy"
 </td></tr>
 <tr><td>location[0].reference</td><td>
-"Location/plannet-location-PCY-0006690"
+"Location/NatlDir-location-PCY-0006690"
 </td></tr>
 <tr><td>location[0].display</td><td>
 "DELLA PIETRA PHARMACY"

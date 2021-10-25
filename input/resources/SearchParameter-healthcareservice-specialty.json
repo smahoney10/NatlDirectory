@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "healthcareservice-specialty",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-specialty",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-specialty",
   "version": "0.2.0",
-  "name": "Plannet_sp_healthcareservice_specialty",
+  "name": "NatlDir_sp_healthcareservice_specialty",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-specialty",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

@@ -1,8 +1,8 @@
 <table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
 <tr><td>id</td><td>
-"plannet-organization-1230085657-direct"
+"NatlDir-organization-1230085657-direct"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Endpoint"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Endpoint"</td></tr>
 <tr><td>extension[0].extension[0].url</td><td>
 "type"
 </td></tr>
@@ -40,7 +40,7 @@
 "BAYSIDE ENDOSCOPY, LLC Direct Address"
 </td></tr>
 <tr><td>managingOrganization.reference</td><td>
-"Organization/plannet-organization-1230085657"
+"Organization/NatlDir-organization-1230085657"
 </td></tr>
 <tr><td>managingOrganization.display</td><td>
 "BAYSIDE ENDOSCOPY, LLC"

@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "healthcareservice-coverage-area",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-coverage-area",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-coverage-area",
   "version": "0.2.0",
-  "name": "Plannet_sp_healthcareservice_coverage_area",
+  "name": "NatlDir_sp_healthcareservice_coverage_area",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-coverage-area",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

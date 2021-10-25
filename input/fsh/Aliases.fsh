@@ -39,11 +39,11 @@ Alias:  $V2table0360VS = http://terminology.hl7.org/ValueSet/v2-0360
 Alias:  $V2table0360CS = http://terminology.hl7.org/CodeSystem/v2-0360 
 
 
-// Plan-Net defined CS that mimic VHDir CodeSystems
-Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS
-Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
-Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/davinci-pdex-plan-net/ValueSet/MinEndpointConnectionTypeVS
-Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/QualificationStatusCS
+// NatlDir defined CS that mimic VHDir CodeSystems
+Alias: $LanguageProficiency = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/LanguageProficiencyCS
+Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/QualificationStatusCS
+Alias: $MinEndpointConnectionTypeVS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/ValueSet/MinEndpointConnectionTypeVS
+Alias: $QualificationStatusCS = http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/QualificationStatusCS
 
 
 

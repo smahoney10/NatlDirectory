@@ -1,2 +1,2 @@
-# pdex-plan-net-fsh
-Davinci PDEX Plan-Net using FHIR Shorthand
+# pdex-NatlDir-fsh
+Davinci PDEX NatlDir using FHIR Shorthand

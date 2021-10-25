@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "healthcareservice-location",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/healthcareservice-location",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/healthcareservice-location",
   "version": "0.2.0",
-  "name": "Plannet_sp_healthcareservice_location",
+  "name": "NatlDir_sp_healthcareservice_location",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/HealthcareService-location",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

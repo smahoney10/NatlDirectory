@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "organization-name",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organization-name",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organization-name",
   "version": "0.2.0",
-  "name": "Plannet_sp_organization_name",
+  "name": "NatlDir_sp_organization_name",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Organization-name",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

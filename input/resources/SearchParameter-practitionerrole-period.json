@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "practitionerrole-period",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitionerrole-period",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitionerrole-period",
   "version": "0.2.0",
-  "name": "Plannet_sp_practitionerrole_period",
+  "name": "NatlDir_sp_practitionerrole_period",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/PractitionerRole-location",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

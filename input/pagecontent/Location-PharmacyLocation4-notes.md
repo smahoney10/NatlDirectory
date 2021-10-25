@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "PharmacyLocation4"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Location"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Location"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -16,7 +16,7 @@
 #existing
 </td></tr>
 <tr><td>extension[0].extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AcceptingPatientsCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/AcceptingPatientsCS"
 </td></tr>
 <tr><td>extension[0].extension[1].url</td><td>
 "fromNetwork"
@@ -25,16 +25,16 @@
 "Organization/AcmeOfCTStandardNetwork"
 </td></tr>
 <tr><td>extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/newpatients"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/newpatients"
 </td></tr>
 <tr><td>extension[1].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/accessibility"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/accessibility"
 </td></tr>
 <tr><td>extension[1].valueCodeableConcept.coding[0].code</td><td>
 #adacomp
 </td></tr>
 <tr><td>extension[1].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/AccessibilityCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/AccessibilityCS"
 </td></tr>
 <tr><td>telecom[0].extension[0].extension[0].url</td><td>
 "daysOfWeek"
@@ -73,7 +73,7 @@
 "true"
 </td></tr>
 <tr><td>telecom[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>telecom[0].extension[1].extension[0].url</td><td>
 "daysOfWeek"
@@ -100,7 +100,7 @@
 "17:00:00"
 </td></tr>
 <tr><td>telecom[0].extension[1].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>telecom[0].system</td><td>
 "phone"

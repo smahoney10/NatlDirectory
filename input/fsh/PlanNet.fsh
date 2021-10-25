@@ -1,9 +1,32 @@
+Profile:        NatlDirCareTeam
+Parent:         CareTeam
+Id:             NatlDir-CareTeam
+Title:          "National Directory Exchange Care Team"
+Description:    "This profile sets minimum expectations for searching for and fetching information associated with a care team. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the CareTeam resource when using this profile."
+* identifier MS
+* status MS
+* category MS
+* name MS
+* subject 0..1
+
+Profile:        NatlDirRestriction
+Parent:         Consent
+Id:             NatlDir-Restriction
+Title:          "National Directory Restriction"
+Description:    "This profile sets minimum expectations for searching for and fetching information associated with a restriction. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the Consent resource when using this profile."
 
 
-Profile:        PlannetEndpoint
+Profile:        NatlDirValidation
+Parent:         VerificationResult
+Id:             NatlDir-Validation
+Title:          "National Directory Validation"
+Description:    "This profile sets minimum expectations for searching for and fetching information associated with validation. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the VerificationResult resource when using this profile."
+
+
+Profile:        NatlDirEndpoint
 Parent:         Endpoint
-Id:             plannet-Endpoint 
-Title:          "Plan-Net Endpoint"
+Id:             NatlDir-Endpoint
+Title:          "National Directory Exchange Endpoint"
 Description:    "The technical details of an endpoint that can be used for electronic services, such as a portal or FHIR REST services, messaging or operations, or DIRECT messaging."
 * meta.lastUpdated 1..1
 * extension contains 
@@ -16,7 +39,7 @@ Description:    "The technical details of an endpoint that can be used for elect
 * connectionType ^binding.extension[0].url = $MinValueSet
 * connectionType ^binding.extension[0].valueCanonical = $MinEndpointConnectionTypeVS  
 * name MS
-* managingOrganization only Reference(PlannetOrganization)
+* managingOrganization only Reference(NatlDirOrganization)
 * managingOrganization MS
 * contact MS
 * contact.value MS
@@ -65,7 +88,7 @@ status 1..1 MS
 
 # InsurancePlan 
 *** Changed
-  * obeys network-or-plan-Network 
+  * obeys network-or-NatlDirwork 
 *** Deleted 9/17
 * identifier.period MS
 * identifier.id MS
@@ -99,10 +122,10 @@ status 1..1 MS
 
 */
 
-Profile:        PlannetHealthcareService
+Profile:        NatlDirHealthcareService
 Parent:         HealthcareService
-Id:             plannet-HealthcareService
-Title:          "Plan-Net HealthcareService"
+Id:             NatlDir-HealthcareService
+Title:          "National Directory Exchange HealthcareService"
 Description:    "The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, pharmacy, hospital and ambulatory care, home care, long-term care, and other health-related and community services."
 * meta.lastUpdated 1..1
 * extension contains
@@ -114,7 +137,7 @@ Description:    "The HealthCareService resource typically describes services off
 * identifier.value MS
 * active 1..1 MS
 * active = true 
-* providedBy only Reference(PlannetOrganization) 
+* providedBy only Reference(NatlDirOrganization) 
 * providedBy MS
 * category 1..1 MS
 * category from HealthcareServiceCategoryVS (extensible)
@@ -122,7 +145,7 @@ Description:    "The HealthCareService resource typically describes services off
 * type from HealthcareServiceTypeVS (extensible)
 * specialty MS
 * specialty from SpecialtiesVS (required)
-* location only Reference(PlannetLocation)
+* location only Reference(NatlDirLocation)
 * location MS
 * name MS
 * comment MS
@@ -133,7 +156,7 @@ Description:    "The HealthCareService resource typically describes services off
 * telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * telecom.system MS
 * telecom.value MS
-* coverageArea only Reference(PlannetLocation)
+* coverageArea only Reference(NatlDirLocation)
 * coverageArea MS
 // * serviceProvisionCode MS
 // eligibility  MS
@@ -150,19 +173,19 @@ Description:    "The HealthCareService resource typically describes services off
 * notAvailable.description MS
 * notAvailable.during MS
 * availabilityExceptions MS
-* endpoint only Reference(PlannetEndpoint)
+* endpoint only Reference(NatlDirEndpoint)
 * endpoint MS
 
 
 
-Profile:        PlannetInsurancePlan
+Profile:        NatlDirInsurancePlan
 Parent:         InsurancePlan
-Id:             plannet-InsurancePlan
-Title:          "Plan-Net InsurancePlan"
+Id:             NatlDir-InsurancePlan
+Title:          "National Directory Exchange InsurancePlan"
 Description:    "An InsurancePlan is a discrete package of health insurance coverage benefits that are offered under a particular network type. A given payer’s products typically differ by network type and/or covered benefits. A plan pairs a product’s covered benefits with the particular cost sharing structure offered to a consumer. A given product may comprise multiple plans (i.e. each plan offers different cost sharing requirements for the same set of covered benefits).
 
 InsurancePlan describes a health insurance offering comprised of a list of covered benefits (i.e. the product), costs associated with those benefits (i.e. the plan), and additional information about the offering, such as who it is owned and administered by, a coverage area, contact information, etc."
-* obeys network-or-plan-Network 
+* obeys network-or-NatlDirwork 
 * obeys plan-type-is-distinct
 * meta.lastUpdated 1..1
 * identifier.type MS
@@ -176,10 +199,10 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * name MS
 * alias MS
 * ownedBy 1..1 MS
-* ownedBy only Reference(PlannetOrganization)
+* ownedBy only Reference(NatlDirOrganization)
 * administeredBy 1..1 MS
-* administeredBy only Reference(PlannetOrganization)
-* coverageArea only Reference(PlannetLocation)
+* administeredBy only Reference(NatlDirOrganization)
+* coverageArea only Reference(NatlDirLocation)
 * coverageArea MS
 * contact MS
 * contact.name MS
@@ -187,24 +210,24 @@ InsurancePlan describes a health insurance offering comprised of a list of cover
 * contact.telecom MS
 * contact.telecom.value MS
 * contact.telecom.system MS
-* endpoint only Reference(PlannetEndpoint)
+* endpoint only Reference(NatlDirEndpoint)
 * endpoint MS 
-* network only Reference(PlannetNetwork)
+* network only Reference(NatlDirNetwork)
 * network  MS
 * plan ^short = "Cost sharing details for the plan"
 * plan.type from InsurancePlanTypeVS (extensible)
 * plan.type MS 
 * plan.type ^short = "Categorization of the cost sharing for the plan"
-* plan.coverageArea only Reference(PlannetLocation)
+* plan.coverageArea only Reference(NatlDirLocation)
 * plan.coverageArea MS   
-* plan.network only Reference(PlannetNetwork)
+* plan.network only Reference(NatlDirNetwork)
 * period MS // Jira ticket FHIR-33206 - SMM
 
 
-Profile:        PlannetLocation
+Profile:        NatlDirLocation
 Parent:         $USCoreLocation
-Id:             plannet-Location
-Title:          "Plan-Net Location"
+Id:             NatlDir-Location
+Title:          "National Directory Exchange Location"
 Description:    "A Location is the physical place where healthcare services are provided, practitioners are employed, 
                  organizations are based, etc. Locations can range in scope from a room in a building to a geographic region/area."
 * meta.lastUpdated 1..1
@@ -232,9 +255,9 @@ Description:    "A Location is the physical place where healthcare services are 
 * telecom.value MS
 * position MS
 * managingOrganization 0..1 MS
-* managingOrganization only Reference(PlannetOrganization)
+* managingOrganization only Reference(NatlDirOrganization)
 * partOf 0..1 MS
-* partOf only Reference(PlannetLocation)
+* partOf only Reference(NatlDirLocation)
 * hoursOfOperation MS
 * hoursOfOperation.daysOfWeek MS
 * hoursOfOperation.allDay MS
@@ -242,7 +265,7 @@ Description:    "A Location is the physical place where healthcare services are 
 * hoursOfOperation.closingTime MS
 * availabilityExceptions MS
 * endpoint MS
-* endpoint only Reference(PlannetEndpoint)
+* endpoint only Reference(NatlDirEndpoint)
 
 /* Network -- deleted 
 * identifier.id MS
@@ -263,13 +286,13 @@ Description:    "A Location is the physical place where healthcare services are 
 * contact.telecom extensions -- not MS
 */
 
-Profile:        PlannetNetwork
+Profile:        NatlDirNetwork
 Parent:         $USCoreOrganization    //Organization 
-Id:             plannet-Network
-Title:          "Plan-Net Network"
+Id:             NatlDir-Network
+Title:          "National Directory Exchange Network"
 Description:    "A Network refers to a healthcare provider insurance network. A healthcare provider insurance network is an aggregation of organizations and individuals that deliver a set of services across a geography through health insurance products/plans. A network is typically owned by a payer.
 
-In the PlanNet IG, individuals and organizations are represented as participants in a PLan-Net Network through the practitionerRole and Plan-Net-organizationAffiliation resources, respectively."
+In the NatlDir IG, individuals and organizations are represented as participants in a National Directory Exchange Network through the practitionerRole and National Directory Exchange-organizationAffiliation resources, respectively."
 * meta.lastUpdated 1..1
 * extension contains
     LocationReference named location-reference 0..* MS
@@ -284,7 +307,7 @@ In the PlanNet IG, individuals and organizations are represented as participants
 * telecom 0..0
 * address 0..1 MS
 * partOf 1..1 MS
-* partOf only Reference(PlannetOrganization)
+* partOf only Reference(NatlDirOrganization)
 * partOf ^short = "The organization that manages this network"
 * contact MS
 * contact.name MS
@@ -295,7 +318,7 @@ In the PlanNet IG, individuals and organizations are represented as participants
 * contact.telecom.extension[via-intermediary] ^short = "Via Intermediary"
 * contact.telecom.value  MS
 * contact.telecom.system  MS
-* endpoint only Reference(PlannetEndpoint)
+* endpoint only Reference(NatlDirEndpoint)
 * endpoint MS 
 
 /*  Organizaiton
@@ -311,10 +334,10 @@ In the PlanNet IG, individuals and organizations are represented as participants
 * telecom.period MS
 */
 
-Profile:        PlannetOrganization
+Profile:        NatlDirOrganization
 Parent:         $USCoreOrganization
-Id:             plannet-Organization
-Title:          "Plan-Net Organization"
+Id:             NatlDir-Organization
+Title:          "National Directory Exchange Organization"
 Description:    "An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
 Guidance:   When the contact is a department name, rather than a human (e.g., patient help line), include a blank family and given name, and provide the department name in contact.name.text"
 * meta.lastUpdated 1..1
@@ -330,7 +353,7 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * active = true 
 * name MS
 * partOf MS  
-* partOf only Reference(PlannetOrganization)
+* partOf only Reference(NatlDirOrganization)
 * address 1..* MS
 * address.extension contains $GeolocationExtension named geolocation 0..1 MS
 * address.type MS
@@ -372,10 +395,10 @@ Guidance:   When the contact is a department name, rather than a human (e.g., pa
 * telecom.period MS
 */
 
-Profile:        PlannetOrganizationAffiliation
+Profile:        NatlDirOrganizationAffiliation
 Parent:         OrganizationAffiliation
-Id:             plannet-OrganizationAffiliation
-Title:          "Plan-Net OrganizationAffiliation"
+Id:             NatlDir-OrganizationAffiliation
+Title:          "National Directory Exchange OrganizationAffiliation"
 Description:    "The OrganizationAffiliation resource describes relationships between two or more organizations, including the services one organization provides another, the location(s) where they provide services, the availability of those services, electronic endpoints, and other relevant information."
 * meta.lastUpdated 1..1
 * obeys organization-or-participatingOrganization 
@@ -388,25 +411,25 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 * active = true 
 * period MS //Jira ticket FHIR-33206 SMM
 * organization MS 
-* organization only Reference (PlannetOrganization)
+* organization only Reference (NatlDirOrganization)
 * participatingOrganization MS 
-* participatingOrganization only Reference (PlannetOrganization)
+* participatingOrganization only Reference (NatlDirOrganization)
 * network MS 
-* network only Reference (PlannetNetwork)
+* network only Reference (NatlDirNetwork)
 * code MS
 * code from OrganizationAffiliationRoleVS  (extensible)
 * specialty MS
 * specialty from SpecialtiesVS (required)
 * location MS 
-* location only Reference (PlannetLocation)
+* location only Reference (NatlDirLocation)
 * healthcareService MS 
-* healthcareService only Reference (PlannetHealthcareService)
+* healthcareService only Reference (NatlDirHealthcareService)
 * telecom MS
 * telecom.system MS
 * telecom.value MS
 * telecom.rank MS
 * endpoint MS
-* endpoint only Reference (PlannetEndpoint)
+* endpoint only Reference (NatlDirEndpoint)
 
 /* Practitioner
 * identifier.id MS
@@ -424,10 +447,10 @@ Description:    "The OrganizationAffiliation resource describes relationships be
 */
 
 
-Profile:        PlannetPractitioner
+Profile:        NatlDirPractitioner
 Parent:         $USCorePractitioner
-Id:             plannet-Practitioner
-Title:          "Plan-Net Practitioner"
+Id:             NatlDir-Practitioner
+Title:          "National Directory Exchange Practitioner"
 Description:    "Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare."
 * meta.lastUpdated 1..1
 * identifier.type MS
@@ -468,10 +491,10 @@ Description:    "Practitioner is a person who is directly or indirectly involved
 
 */
 
-Profile:        PlannetPractitionerRole
+Profile:        NatlDirPractitionerRole
 Parent:         PractitionerRole
-Id:             plannet-PractitionerRole
-Title:          "Plan-Net PractitionerRole"
+Id:             NatlDir-PractitionerRole
+Title:          "National Directory Exchange PractitionerRole"
 Description:    "PractionerRole describes details about a provider, which can be a practitioner or an organization. When the provider is a practitioner, 
 there may be a relationship to an organization. A provider renders services to patients at a location. When the provider is a practitioner, there may also 
 be a relationship to an organization. Practitioner participation in healthcare provider insurance networks may be direct or through their role at an organization."
@@ -491,17 +514,17 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * active 1..1 MS
 //* active = true // Jira ticket FHIR-33206-SMM to support incoming/outcgoing practititcioners
 * period MS 
-* practitioner only Reference(PlannetPractitioner)   // 1..1 from USCore
-* organization only Reference(PlannetOrganization)         // 1..1 from USCore
+* practitioner only Reference(NatlDirPractitioner)   // 1..1 from USCore
+* organization only Reference(NatlDirOrganization)         // 1..1 from USCore
 * practitioner 0..1  MS   // 1..1 from USCore
 * organization 0..1   MS  // 1..1 from USCore
 * code MS  
 * code from PractitionerRoleVS
 * specialty  MS
 * specialty from IndividualAndGroupSpecialtiesVS (required)
-* location only Reference(PlannetLocation)
+* location only Reference(NatlDirLocation)
 * location MS
-* healthcareService only Reference(PlannetHealthcareService)
+* healthcareService only Reference(NatlDirHealthcareService)
 * healthcareService MS 
 * telecom MS
 * telecom.extension contains
@@ -519,23 +542,25 @@ be a relationship to an organization. Practitioner participation in healthcare p
 * notAvailable MS
 * notAvailable.description MS
 * notAvailable.during MS
-* endpoint only Reference(PlannetEndpoint) 
+* endpoint only Reference(NatlDirEndpoint) 
 * endpoint 0..* MS
 
 
+
+
 Invariant:  practitioner-or-organization-or-healthcareservice-or-location 
-Description: "If PlannetPractitionerRole.practitioner is absent  ( PlannetPractitionerRole.organization, PlannetPractitionerRole.healthcareservice, PlannetPractitionerRole.location) must be present"
+Description: "If NatlDirPractitionerRole.practitioner is absent  ( NatlDirPractitionerRole.organization, NatlDirPractitionerRole.healthcareservice, NatlDirPractitionerRole.location) must be present"
 Expression: "practitioner.exists() or (organization.exists() or healthcareservice.exists() or location.exists())"
 Severity:   #error
 
 
 Invariant:  organization-or-participatingOrganization 
-Description: "PlannetOrganizationAffiliation.organization or  PlannetOrganizationAffiliation.participatingOrganization"
+Description: "NatlDirOrganizationAffiliation.organization or  NatlDirOrganizationAffiliation.participatingOrganization"
 Expression: "organization.exists() or participatingOrganization.exists()"
 Severity:   #error
 
 // New 09/17
-Invariant:  network-or-plan-Network 
+Invariant:  network-or-NatlDirwork 
 Description: "If an insuranceplan does not define a network, then each plan must define one"
 Expression: "network.exists() or plan.network.exists.allTrue()"
 Severity:   #error

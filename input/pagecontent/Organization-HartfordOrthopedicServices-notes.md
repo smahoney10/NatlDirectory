@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "HartfordOrthopedicServices"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Organization"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -55,7 +55,7 @@ NPI456
 "true"
 </td></tr>
 <tr><td>telecom[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>telecom[0].extension[1].extension[0].url</td><td>
 "daysOfWeek"
@@ -82,7 +82,7 @@ NPI456
 "17:00:00"
 </td></tr>
 <tr><td>telecom[0].extension[1].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>telecom[0].system</td><td>
 "phone"
@@ -139,7 +139,7 @@ https://www.orga.com
 "true"
 </td></tr>
 <tr><td>contact[0].telecom[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>contact[0].telecom[0].extension[1].extension[0].url</td><td>
 "daysOfWeek"
@@ -166,7 +166,7 @@ https://www.orga.com
 "17:00:00"
 </td></tr>
 <tr><td>contact[0].telecom[0].extension[1].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>contact[0].telecom[0].system</td><td>
 "phone"

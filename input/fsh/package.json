@@ -1,8 +1,8 @@
 {
- "name": "hl7.fhir.us.davinci-pdex-plan-net",
+ "name": "hl7.fhir.us.davinci-pdex-NatlDir",
  "version" : "0.1.0",  
- "canonical" : "http://hl7.org/fhir/us/davinci-pdex-plan-net",
- "url" : "http://hl7.org/fhir/us/davinci-pdex-plan-net",
+ "canonical" : "http://hl7.org/fhir/us/davinci-pdex-NatlDir",
+ "url" : "http://hl7.org/fhir/us/davinci-pdex-NatlDir",
  "title" : "DaVinci PDEX Plan Net",
  "description": "Davinci PDEX Plan Net -- FSH version",
  "releaselabel": "CI build",
@@ -11,7 +11,7 @@
     "hl7.fhir.us.core": "3.1.0"
  },
  "keywords": [
-   "Plan-Net",
+   "NatlDir",
    "Provider Directory", 
    "DaVinci",
    "PDEX"

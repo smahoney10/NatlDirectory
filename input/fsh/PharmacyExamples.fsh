@@ -1,8 +1,8 @@
 Instance: PharmChain
-InstanceOf: PlannetOrganization
+InstanceOf: NatlDirOrganization
 Description: "Organization that Provides Pharmacy Services"
 Usage: #example
-* meta.profile = Canonical(PlannetOrganization) 
+* meta.profile = Canonical(NatlDirOrganization) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -29,10 +29,10 @@ Usage: #example
 * address.postalCode = "00014-1234"
 
 Instance: BigBox
-InstanceOf: PlannetOrganization
+InstanceOf: NatlDirOrganization
 Description: "Organization that Manages 2 of PharmChain's pharmacies"
 Usage: #example
-* meta.profile =  Canonical(PlannetOrganization) 
+* meta.profile =  Canonical(NatlDirOrganization) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -59,10 +59,10 @@ Usage: #example
 
 
 Instance: PharmChainRetailService
-InstanceOf: PlannetHealthcareService
+InstanceOf: NatlDirHealthcareService
 Description: "Pharmacy Service provided by PharmChain"
 Usage: #example
-* meta.profile =  Canonical(PlannetHealthcareService) 
+* meta.profile =  Canonical(NatlDirHealthcareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -81,10 +81,10 @@ Usage: #example
 
 
 Instance: PharmChainAffil1
-InstanceOf: PlannetOrganizationAffiliation
+InstanceOf: NatlDirOrganizationAffiliation
 Description: "Organization Affiliation for PharmChain (Retail)"
 Usage: #example
-* meta.profile =  Canonical(PlannetOrganizationAffiliation)
+* meta.profile =  Canonical(NatlDirOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -97,10 +97,10 @@ Usage: #example
 * specialty = $NUCCProviderTaxonomy#3336C0003X "Community/Retail Pharmacy"
 
 Instance: PharmChainAffil2
-InstanceOf: PlannetOrganizationAffiliation
+InstanceOf: NatlDirOrganizationAffiliation
 Description: "Organization Affiliation for PharmChain (Compounding)"
 Usage: #example
-* meta.profile = Canonical(PlannetOrganizationAffiliation)
+* meta.profile = Canonical(NatlDirOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -112,10 +112,10 @@ Usage: #example
 * code = OrganizationAffiliationRoleCS#pharmacy 
 
 Instance: PharmChainAffil3
-InstanceOf: PlannetOrganizationAffiliation
+InstanceOf: NatlDirOrganizationAffiliation
 Description: "Organization Affiliation for PharmChain (MailOrder)"
 Usage: #example
-* meta.profile = Canonical(PlannetOrganizationAffiliation)
+* meta.profile = Canonical(NatlDirOrganizationAffiliation)
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -127,10 +127,10 @@ Usage: #example
 
 
 Instance: PharmChainCompService
-InstanceOf: PlannetHealthcareService
+InstanceOf: NatlDirHealthcareService
 Description: "Compound Pharmacy Service provided by PharmacyOrganization A"
 Usage: #example
-* meta.profile = Canonical(PlannetHealthcareService) 
+* meta.profile = Canonical(NatlDirHealthcareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -144,10 +144,10 @@ Usage: #example
 * telecom.extension[via-intermediary].valueReference = Reference(PharmLoc1)
 
 Instance: PharmChainMailService
-InstanceOf: PlannetHealthcareService
+InstanceOf: NatlDirHealthcareService
 Description: "Mail Order Pharmacy Service provided by PharmacyOrganization A"
 Usage: #example
-* meta.profile = Canonical(PlannetHealthcareService) 
+* meta.profile = Canonical(NatlDirHealthcareService) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * active = true
@@ -170,10 +170,10 @@ Usage: #example
 
 
 Instance: PharmLoc1
-InstanceOf: PlannetLocation
+InstanceOf: NatlDirLocation
 Description: "Location of Pharmacy1 in PharmChain's network"
 Usage: #example
-* meta.profile = Canonical(PlannetLocation) 
+* meta.profile = Canonical(NatlDirLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -220,10 +220,10 @@ Usage: #example
 
 
 Instance: PharmLoc2
-InstanceOf: PlannetLocation
+InstanceOf: NatlDirLocation
 Description: "Location of Pharmacy2 in PharmChain's network"
 Usage: #example
-* meta.profile = Canonical(PlannetLocation) 
+* meta.profile = Canonical(NatlDirLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -269,10 +269,10 @@ Usage: #example
 
 
 Instance: PharmLoc3
-InstanceOf: PlannetLocation
+InstanceOf: NatlDirLocation
 Description: "Location of Pharmacy3 in PharmChain's network"
 Usage: #example
-* meta.profile = Canonical(PlannetLocation) 
+* meta.profile = Canonical(NatlDirLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 
@@ -316,10 +316,10 @@ Usage: #example
 
 
 Instance: PharmLoc4
-InstanceOf: PlannetLocation
+InstanceOf: NatlDirLocation
 Description: "Location of Pharmacy4 in PharmChain's network"
 Usage: #example
-* meta.profile = Canonical(PlannetLocation) 
+* meta.profile = Canonical(NatlDirLocation) 
 * meta.lastUpdated = "2020-07-07T13:26:22.0314215+00:00"
 * language = #en-US
 * status = #active 

@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "HamiltonClinicAffiliation"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-OrganizationAffiliation"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-OrganizationAffiliation"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -19,7 +19,7 @@
 #outpatient
 </td></tr>
 <tr><td>code[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrganizationAffiliationRoleCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/OrganizationAffiliationRoleCS"
 </td></tr>
 <tr><td>healthcareService[0].reference</td><td>
 "HealthcareService/HamiltonClinicServices"

@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "insuranceplan-administered-by",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-administered-by",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-administered-by",
   "version": "0.2.0",
-  "name": "Plannet_sp_insuranceplan_administered_by",
+  "name": "NatlDir_sp_insuranceplan_administered_by",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-administered-by",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "insuranceplan-type",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/insuranceplan-type",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/insuranceplan-type",
   "version": "0.2.0",
-  "name": "Plannet_sp_insuranceplan_type",
+  "name": "NatlDir_sp_insuranceplan_type",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/InsurancePlan-type",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

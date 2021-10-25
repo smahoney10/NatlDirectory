@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "organizationaffiliation-specialty",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/organizationaffiliation-specialty",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/organizationaffiliation-specialty",
   "version": "0.2.0",
-  "name": "Plannet_sp_organizationaffiliation_specialty",
+  "name": "NatlDir_sp_organizationaffiliation_specialty",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/OrganizationAffiliation-specialty",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

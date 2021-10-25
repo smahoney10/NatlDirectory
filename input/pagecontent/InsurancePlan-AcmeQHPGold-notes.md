@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "AcmeQHPGold"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-InsurancePlan"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-InsurancePlan"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -22,7 +22,7 @@
 #qhp
 </td></tr>
 <tr><td>type[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/InsuranceProductTypeCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/InsuranceProductTypeCS"
 </td></tr>
 <tr><td>type[0].coding[0].display</td><td>
 "Qualified Health Plan"
@@ -31,7 +31,7 @@
 #gold
 </td></tr>
 <tr><td>plan[0].type.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/InsurancePlanTypeCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/InsurancePlanTypeCS"
 </td></tr>
 <tr><td>plan[0].type.coding[0].display</td><td>
 "Gold-QHP"

@@ -1,9 +1,9 @@
 {
   "resourceType": "SearchParameter",
   "id": "practitioner-name",
-  "url": "http://hl7.org/fhir/us/davinci-pdex-plan-net/SearchParameter/practitioner-name",
+  "url": "http://hl7.org/fhir/us/davinci-pdex-NatlDir/SearchParameter/practitioner-name",
   "version": "0.2.0",
-  "name": "Plannet_sp_practitioner_name",
+  "name": "NatlDir_sp_practitioner_name",
   "derivedFrom": "http://hl7.org/fhir/SearchParameter/Practitioner-name",
   "status": "active",
   "date": "2018-05-23T00:00:00+00:00",

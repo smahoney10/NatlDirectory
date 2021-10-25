@@ -1,11 +1,11 @@
 <table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
 <tr><td>id</td><td>
-"plannet-organization-f91a1076447b859c6c436752e"
+"NatlDir-organization-f91a1076447b859c6c436752e"
 </td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Organization"</td></tr>
 <tr><td>identifier[0].use</td><td>
 "official"
 </td></tr>
@@ -19,7 +19,7 @@
 "true"
 </td></tr>
 <tr><td>type[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/OrgTypeCS"
 </td></tr>
 <tr><td>type[0].coding[0].code</td><td>
 #fac
@@ -143,7 +143,7 @@
 "18:00:00"
 </td></tr>
 <tr><td>contact[0].telecom[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/contactpoint-availabletime"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/contactpoint-availabletime"
 </td></tr>
 <tr><td>contact[0].telecom[0].system</td><td>
 "phone"

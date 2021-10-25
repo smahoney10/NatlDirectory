@@ -1,25 +1,25 @@
 <table border="1"><tr><td><b>Field</b></td><td><b>Value</b></td></tr>
 <tr><td>id</td><td>
-"plannet-practitionerrole-1233011061"
+"NatlDir-practitionerrole-1233011061"
 </td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-08-17T10:03:10Z"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-PractitionerRole"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-PractitionerRole"</td></tr>
 <tr><td>extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/network-reference"
 </td></tr>
 <tr><td>extension[0].valueReference.reference</td><td>
-"Organization/plannet-network-HPID020000"
+"Organization/NatlDir-network-HPID020000"
 </td></tr>
 <tr><td>extension[0].valueReference.display</td><td>
 "Green Circle of Massachusetts HMO"
 </td></tr>
 <tr><td>extension[1].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/network-reference"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/network-reference"
 </td></tr>
 <tr><td>extension[1].valueReference.reference</td><td>
-"Organization/plannet-network-HPID100000"
+"Organization/NatlDir-network-HPID100000"
 </td></tr>
 <tr><td>extension[1].valueReference.display</td><td>
 "State of Massachusetts Preferred Provider Network"
@@ -49,19 +49,19 @@
 "true"
 </td></tr>
 <tr><td>practitioner.reference</td><td>
-"Practitioner/plannet-practitioner-1233011061"
+"Practitioner/NatlDir-practitioner-1233011061"
 </td></tr>
 <tr><td>practitioner.display</td><td>
 "Virgilio Roberts"
 </td></tr>
 <tr><td>organization.reference</td><td>
-"Organization/plannet-organization-1239972445"
+"Organization/NatlDir-organization-1239972445"
 </td></tr>
 <tr><td>organization.display</td><td>
 "QUINCY MEDICAL CENTER"
 </td></tr>
 <tr><td>code[0].coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/ProviderRoleCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/ProviderRoleCS"
 </td></tr>
 <tr><td>code[0].coding[0].code</td><td>
 #ph
@@ -82,7 +82,7 @@
 "Audiologist"
 </td></tr>
 <tr><td>location[0].reference</td><td>
-"Location/plannet-location-1239972445"
+"Location/NatlDir-location-1239972445"
 </td></tr>
 <tr><td>location[0].display</td><td>
 "QUINCY MEDICAL CENTER"

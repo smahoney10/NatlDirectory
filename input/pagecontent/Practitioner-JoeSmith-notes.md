@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "JoeSmith"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Practitioner"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -34,7 +34,7 @@ NPI323
 "https://www.usps.com/"
 </td></tr>
 <tr><td>qualification[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/practitioner-qualification"
 </td></tr>
 <tr><td>qualification[0].code.coding[0].code</td><td>
 #MD
@@ -64,7 +64,7 @@ NPI323
 "https://www.usps.com/"
 </td></tr>
 <tr><td>qualification[1].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/practitioner-qualification"
 </td></tr>
 <tr><td>qualification[1].code.coding[0].code</td><td>
 #207R00000X
@@ -97,7 +97,7 @@ NPI323
 "https://www.usps.com/"
 </td></tr>
 <tr><td>qualification[2].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/practitioner-qualification"
 </td></tr>
 <tr><td>qualification[2].code.coding[0].code</td><td>
 #207RC0000X

@@ -5,7 +5,7 @@
 <tr><td>id</td><td>
 "HansSolo"
 </td></tr>
-<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Practitioner"</td></tr>
+<tr><td>meta.profile[0]</td><td>"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/NatlDir-Practitioner"</td></tr>
 <tr><td>meta.lastUpdated</td><td>
 "2020-07-07T13:26:22.0314215+00:00"
 </td></tr>
@@ -34,7 +34,7 @@ NPI3233
 "https://www.usps.com/"
 </td></tr>
 <tr><td>qualification[0].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/practitioner-qualification"
 </td></tr>
 <tr><td>qualification[0].code.coding[0].code</td><td>
 #MD
@@ -64,7 +64,7 @@ NPI3233
 "https://www.usps.com/"
 </td></tr>
 <tr><td>qualification[1].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/practitioner-qualification"
 </td></tr>
 <tr><td>qualification[1].code.coding[0].code</td><td>
 #207R00000X
@@ -97,7 +97,7 @@ NPI3233
 "https://www.usps.com/"
 </td></tr>
 <tr><td>qualification[2].extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/practitioner-qualification"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/practitioner-qualification"
 </td></tr>
 <tr><td>qualification[2].code.coding[0].code</td><td>
 #207RC0000X
@@ -115,13 +115,13 @@ NPI3233
 "American Board of Internal Medicine"
 </td></tr>
 <tr><td>extension[0].url</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/communication-proficiency"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/StructureDefinition/communication-proficiency"
 </td></tr>
 <tr><td>extension[0].valueCodeableConcept.coding[0].code</td><td>
 #30
 </td></tr>
 <tr><td>extension[0].valueCodeableConcept.coding[0].system</td><td>
-"http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/LanguageProficiencyCS"
+"http://hl7.org/fhir/us/davinci-pdex-NatlDir/CodeSystem/LanguageProficiencyCS"
 </td></tr>
 <tr><td>language</td><td>
 "en-US"
