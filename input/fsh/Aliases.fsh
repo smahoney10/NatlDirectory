@@ -9,7 +9,17 @@ Alias:   $us-core-provider-specialty-vs = http://hl7.org/fhir/us/core/ValueSet/u
 //VhDir Aliases
 Alias: $SCT = http://snomed.info/sct
 Alias: $GeolocationExtension = http://hl7.org/fhir/StructureDefinition/geolocation
-
+Alias: $consent = http://hl7.org/fhir/uv/vhdir/ValueSet/consent
+Alias: $verificationresult-validation-type = http://hl7.org/fhir/ValueSet/verificationresult-validation-type
+Alias: $validationprocess = http://hl7.org/fhir/uv/vhdir/ValueSet/validationprocess
+Alias: $verificationresult-primary-source-type = http://hl7.org/fhir/ValueSet/verificationresult-primary-source-type
+Alias: $verificationresult-communication-method_1 = http://hl7.org/fhir/ValueSet/verificationresult-communication-method
+Alias: $identifierstatus = http://hl7.org/fhir/uv/vhdir/ValueSet/identifierstatus
+Alias: $aliastype = http://hl7.org/fhir/uv/vhdir/ValueSet/aliastype
+Alias: $digitalcertificatetype = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetype
+Alias: $digitalcertificateuse = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificateuse
+Alias: $digitalcertificatestandard = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatestandard
+Alias: $digitalcertificatetrustframework = http://hl7.org/fhir/uv/vhdir/ValueSet/digitalcertificatetrustframework
 
 // Other Aliases
 Alias:   $OrgType = http://terminology.hl7.org/CodeSystem/organization-type

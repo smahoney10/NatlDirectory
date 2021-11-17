@@ -13,14 +13,14 @@
 id: hl7.fhir.us.davinci-pdex-NatlDir
 canonical: http://hl7.org/fhir/us/national-healthcare-directory
 version: 1.0.0
-name: ONC FAST National Healthcare Directory
-title: National Healthcare Directory
+name: ONC FAST National Care Coordination Directory
+title: National Care Coordination Directory
 status: active
 publisher:
   name: HL7 Patient Administration Working Group
   url: https://www.hl7.org/Special/committees/pafm/index.cfm
   email: pafm@lists.HL7.org
-description: National Healthcare Directory
+description: National Care Coordination Directory
 jurisdiction: urn:iso:std:iso:3166#US
 license: CC0-1.0
 fhirVersion: 4.0.1

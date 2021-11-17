@@ -1,6 +1,6 @@
 {
     "package-id": "hl7.fhir.us.national-directory",
-    "title": "ONC FAST National Healthcare Directory",
+    "title": "ONC FAST National Care Coordination Directory",
     "canonical": "http://hl7.org/fhir/us/national-directory",
     "list": [
       {

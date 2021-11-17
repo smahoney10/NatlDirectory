@@ -1,3 +1,271 @@
+
+Extension: OrgAliasPeriod
+Id: org-alias-period
+Title: "NatlDir Org Alias Period"
+Description: "the period of time the alias was actively used"
+* ^context.expression = "Organization.alias"
+* ^context.type = #element
+* ^date = "2017-09-01T06:36:02.345+10:00"
+* . ..1
+* . ^short = "Period"
+* . ^definition = "The period during which the alias was used"
+* valuePeriod 1.. MS
+* valuePeriod only Period
+* valuePeriod ^sliceName = "valuePeriod"
+* valuePeriod ^label = "period"
+* valuePeriod ^short = "Period"
+* valuePeriod ^definition = "The period during which the alias was used"
+
+Extension: OrgAliasType
+Id: org-alias-type
+Title: "NatlDir Org Alias Type"
+Description: "Type of alias (legal alternative | historical)"
+* ^context.expression = "Organization.alias"
+* ^context.type = #element
+* ^date = "2017-09-01T06:32:54.172+10:00"
+* . ..1
+* . ^short = "Type"
+* . ^definition = "Type of alias (legal alternative | historical)"
+* valueCodeableConcept 1.. MS
+* valueCodeableConcept only CodeableConcept
+* valueCodeableConcept from $aliastype (example)
+* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+* valueCodeableConcept ^label = "type"
+* valueCodeableConcept ^short = "Type"
+* valueCodeableConcept ^definition = "Type of alias (legal alternative | historical)"
+
+
+Extension: NewPatientProfile
+Id: newpatientprofile
+Title: "NatlDir New Patient Profile"
+Description: "Additional information about new patients a practitioner/service/location accepts (e.g. only children)"
+* ^context[0].expression = "PractitionerRole"
+* ^context[=].type = #element
+* ^context[+].expression = "Location"
+* ^context[=].type = #element
+* ^date = "2017-11-13T14:13:29.07-05:00"
+* . ..*
+* . ^short = "New patient profile"
+* . ^definition = "Additional information about new patients a practitioner/service/location accepts"
+* valueString 1.. MS
+* valueString only string
+* valueString ^sliceName = "valueString"
+* valueString ^label = "newpatientprofile"
+* valueString ^short = "New patient profile"
+* valueString ^definition = "Additional information about new patients a practitioner/service/location accepts (e.g. only children)"
+
+
+Extension: InsurancePlanReference
+Id: insuranceplan-reference
+Title: "NatlDir Insurance Plan Reference"
+Description: "A reference to the insurancePlan resource"
+* ^context.expression = "Organization"
+* ^context.type = #element
+* ^date = "2018-11-08T11:58:03-08:00"
+* . ^short = "InsurancePlan reference"
+* . ^definition = "A reference to the insurancePlan resource"
+* valueReference 1.. MS
+* valueReference only Reference(NatlDirInsurancePlan)
+* valueReference ^sliceName = "valueReference"
+* valueReference ^short = "A reference to the insurance plan"
+* valueReference ^definition = "A reference to the insurance plan"
+
+
+Extension: HealthcareServiceReference
+Id: healthcareservice-reference
+Title: "NatlDir Healthcareservice Reference"
+Description: "Reference to healthcareservice resource"
+* ^context.expression = "CareTeam"
+* ^context.type = #element
+* ^date = "2017-11-08T11:53:40.139-05:00"
+* . ^short = "healthcareservice"
+* . ^definition = "Reference to healthcareservice resources"
+* valueReference 1.. MS
+* valueReference only Reference(NatlDirHealthcareService)
+* valueReference ^sliceName = "valueReference"
+* valueReference ^label = "healthcareservice"
+* valueReference ^short = "Healthcare service"
+* valueReference ^definition = "Reference to healthcareservice resource"
+* valueReference ^comment = "Extension to careteam"
+
+
+Extension: EndpointReference
+Id: endpoint-reference
+Title: "NatlDir Practitioner Endpoint Reference"
+Description: "The technical details of an endpoint that can be used for electronic services"
+* ^context[0].expression = "Practitioner"
+* ^context[=].type = #element
+* ^context[+].expression = "CareTeam"
+* ^context[=].type = #element
+* ^date = "2017-11-07T12:23:01.804-05:00"
+* . ^short = "Endpoint reference"
+* . ^definition = "A reference to the endpoint resource"
+* valueReference 1.. MS
+* valueReference only Reference(NatlDirEndpoint)
+* valueReference ^sliceName = "valueReference"
+* valueReference ^short = "Endpoint reference"
+* valueReference ^definition = "A reference to the endpoint"
+
+
+Extension: DigitalCertificate
+Id: digitalcertificate
+Title: "NatlDir Digitalcertificate"
+Description: "A digital certificate, used to identify a user or group of users, or for encrypted communications"
+* ^context[0].expression = "Practitioner"
+* ^context[=].type = #element
+* ^context[+].expression = "Organization"
+* ^context[=].type = #element
+* ^context[+].expression = "PractitionerRole"
+* ^context[=].type = #element
+* ^context[+].expression = "Endpoint"
+* ^context[=].type = #element
+* ^date = "2017-11-13T11:51:52.262-05:00"
+* . ^short = "digitalcertificate"
+* . ^definition = "A digital certificate, used to identify a user or group of users, or for encrypted communications"
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.rules = #open
+* extension ^mustSupport = false
+* extension contains
+    type 1..1 MS and
+    use 0..* MS and
+    certificateStandard 0..1 MS and
+    certificate 1..1 MS and
+    expirationDate 1..1 MS and
+    trustFramework 0..* MS
+* extension[type] ^label = "type"
+* extension[type] ^short = "Type"
+* extension[type] ^definition = "Type of digital certificate (TLS/SSL; device; identity; group)"
+* extension[type].valueCoding 1..
+* extension[type].valueCoding only Coding
+* extension[type].valueCoding from $digitalcertificatetype (example)
+* extension[type].valueCoding ^sliceName = "valueCoding"
+* extension[type].valueCoding ^label = "type"
+* extension[type].valueCoding ^short = "type"
+* extension[type].valueCoding ^definition = "Type of digital certificate (TLS/SSL; device; identity; group)"
+* extension[use] ^label = "use"
+* extension[use] ^short = "Use"
+* extension[use] ^definition = "Purpose of the digital certificate (digsig; keyEncipherment)"
+* extension[use].valueCoding 1..
+* extension[use].valueCoding only Coding
+* extension[use].valueCoding from $digitalcertificateuse (example)
+* extension[use].valueCoding ^sliceName = "valueCoding"
+* extension[use].valueCoding ^label = "use"
+* extension[use].valueCoding ^short = "use"
+* extension[use].valueCoding ^definition = "Purpose of the digital certificate (digsig; keyEncipherment)"
+* extension[certificateStandard] ^label = "certificateStandard"
+* extension[certificateStandard] ^short = "Certificate standard"
+* extension[certificateStandard] ^definition = "The standard associated with the digital certificate (x.509v3)"
+* extension[certificateStandard].valueCoding 1..
+* extension[certificateStandard].valueCoding only Coding
+* extension[certificateStandard].valueCoding from $digitalcertificatestandard (required)
+* extension[certificateStandard].valueCoding ^sliceName = "valueCoding"
+* extension[certificateStandard].valueCoding ^label = "certificateStandard"
+* extension[certificateStandard].valueCoding ^short = "Certificate standard"
+* extension[certificateStandard].valueCoding ^definition = "The standard associated with the digital certificate (x.509v3)"
+* extension[certificate] ^label = "certificate"
+* extension[certificate] ^short = "Certificate"
+* extension[certificate] ^definition = "PEM format certificate (as a string) or URI for locating the certificate"
+* extension[certificate].value[x] 1..
+//* extension[certificate].value[x] only string or uri
+* extension[certificate].value[x] ^label = "certificate"
+* extension[certificate].value[x] ^short = "Certificate"
+* extension[certificate].value[x] ^definition = "PEM format certificate (as a string) or URI for locating the certificate"
+* extension[expirationDate] ^label = "expirationDate"
+* extension[expirationDate] ^short = "Expiration date"
+* extension[expirationDate] ^definition = "Expiration date of the certificate"
+* extension[expirationDate].valueDate 1..
+* extension[expirationDate].valueDate only date
+* extension[expirationDate].valueDate ^sliceName = "valueDate"
+* extension[expirationDate].valueDate ^label = "expirationDate"
+* extension[expirationDate].valueDate ^short = "Expiration date"
+* extension[expirationDate].valueDate ^definition = "Expiration date of the certificate"
+* extension[trustFramework] ^label = "trustFramework"
+* extension[trustFramework] ^short = "Trust framework"
+* extension[trustFramework] ^definition = "The trust framework(s) supported by the certificate (DirectTrust; FBCA; other)"
+* extension[trustFramework].valueCodeableConcept 1..
+* extension[trustFramework].valueCodeableConcept only CodeableConcept
+* extension[trustFramework].valueCodeableConcept from $digitalcertificatetrustframework (example)
+* extension[trustFramework].valueCodeableConcept ^sliceName = "valueCodeableConcept"
+* extension[trustFramework].valueCodeableConcept ^label = "trustFramework"
+* extension[trustFramework].valueCodeableConcept ^short = "Trust framework"
+* extension[trustFramework].valueCodeableConcept ^definition = "The trust framework(s) supported by the certificate (DirectTrust; FBCA; other)"
+//* value[x] MS
+
+
+Extension: CareteamAlias
+Id: careteam-alias
+Title: "NatlDir Careteam Alias"
+Description: "Alternate names by which the team is known"
+* ^context.expression = "CareTeam"
+* ^context.type = #element
+* ^date = "2017-11-16T15:42:31.192-05:00"
+* . ^short = "Alias"
+* . ^definition = "Alternate names by which the team is also known"
+* valueString 1.. MS
+* valueString only string
+* valueString ^sliceName = "valueString"
+* valueString ^label = "alias"
+* valueString ^short = "Alias"
+* valueString ^definition = "Alternate names by which the team is also known"
+
+
+Extension: UsageRestriction
+Id: usage-restriction
+Title: "NatlDir Usage Restriction"
+Description: """The FHIR specification contains a security meta tag which can be used to inform systems of the sensitivity of resources, as well as by access control mechanisms to ensure content isn't exposed that shouldn't be.
+This mechanism only goes to the resource level, this reference to a usage-restriction (consent) extends this further into the resource, and can be applied to any element, and may apply to all properties beneath the element (e.g. If applied to an identifier on a practitioner, then all the properties of the identifier should not be exposed unless it is understood)
+This will be expected to be used as a modifier extension."""
+* ^context.type = #fhirpath
+* ^context.expression = "descendants()"
+* ^date = "2017-10-20T10:59:36.931+11:00"
+* . ^short = "Restriction"
+* . ^definition = "Identifies and conveys information about restrictions on the use or release of exchanged information, e.g. information that can only be shared under particular condition, such as a signed data use agreement between parties"
+* valueReference 1.. MS
+* valueReference only Reference(NatlDirRestriction)
+* valueReference ^sliceName = "valueReference"
+* valueReference ^short = "Reference"
+* valueReference ^definition = "Reference to the restriction resource (consent)"
+* valueReference ^comment = "This is anticipated to usually be a reference to a contained resource (this eases distribution, and permits the same consent applying to multiple properties in the same resource)"
+* valueReference.identifier ..0
+
+
+Extension: IdentifierStatus
+Id: identifier-status
+Title: "NatlDir Identifier Status"
+Description: "Describes the status of an identifier"
+* ^context.expression = "Identifier"
+* ^context.type = #element
+* ^date = "2017-11-20T11:33:43.51-05:00"
+* . ..1
+* . ^short = "Status"
+* . ^definition = "Describes the status of an identifier"
+* valueCode 1.. MS
+* valueCode only code
+* valueCode from $identifierstatus (required)
+* valueCode ^sliceName = "valueCode"
+* valueCode ^label = "status"
+* valueCode ^short = "active|inactive|issued-in-error|revoked|pending"
+* valueCode ^definition = "Describes the status of an identifier"
+
+Extension: ContactPointViaIntermediary
+Id: contactpoint-viaintermediary
+Title: "NatlDir Contactpoint Viaintermediary"
+Description: "Represents an external point of contact responsible for handling communications with this entity"
+* ^context.expression = "ContactPoint"
+* ^context.type = #element
+* ^date = "2017-11-20T11:48:25.475-05:00"
+* . ..1
+* . ^short = "viaintermediary"
+* . ^definition = "Represents an external point of contact responsible for handling communications with this entity"
+* valueReference 1.. MS
+* valueReference only Reference(NatlDirPractitionerRole or NatlDirOrganization or NatlDirOrganizationAffiliation or NatlDirLocation)
+* valueReference ^sliceName = "valueReference"
+* valueReference ^label = "viaintermediary"
+* valueReference ^short = "Via intermediary"
+* valueReference ^definition = "Represents an external point of contact responsible for handling communications with this entity"
+
+
 Extension: Accessibility
 Id: accessibility
 Title: "Accessibility"
